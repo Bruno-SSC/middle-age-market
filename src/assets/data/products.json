@@ -1,0 +1,205 @@
+{
+  "utils": {
+    "torch": {
+      "ID": "prod1",
+      "name": "coal torch",
+      "price": 2,
+      "rarity": "common",
+      "imgName": "torch.png",
+      "quantity": 0
+    },
+    "raw_steak": {
+      "ID": "prod2",
+      "name": "raw steak",
+      "price": 3,
+      "rarity": "common",
+      "img": "common",
+      "imgName": "rawsteak.png",
+      "quantity": 0
+    },
+    "rope": {
+      "ID": "prod3",
+      "name": "rope",
+      "price": 2,
+      "rarity": "common",
+      "imgName": "rope.png",
+      "quantity": 0
+    },
+    "nails": {
+      "ID": "prod4",
+      "name": "steel nails",
+      "price": 1,
+      "rarity": "common",
+      "imgName": "nails.png",
+      "quantity": 0
+    },
+    "log": {
+      "ID": "prod5",
+      "name": "tree log",
+      "price": 2,
+      "rarity": "common",
+      "imgName": "log.png",
+      "quantity": 0
+    },
+    "leather": {
+      "ID": "prod6",
+      "name": "leather",
+      "price": 4,
+      "rarity": "common",
+      "imgName": "leather.png",
+      "quantity": 0
+    },
+    "key": {
+      "ID": "prod7",
+      "name": "key",
+      "price": 5,
+      "rarity": "common",
+      "imgName": "key.png",
+      "quantity": 0
+    },
+    "empty_bucket": {
+      "ID": "prod8",
+      "name": "empty bucket",
+      "price": 2,
+      "rarity": "legendary",
+      "imgName": "emptybucket.png",
+      "quantity": 0
+    }
+  },
+  "tools": {
+    "axe": {
+      "ID": "prod9",
+      "name": "steel axe",
+      "price": 10,
+      "rarity": "legendary",
+      "imgName": "axe.png",
+      "quantity": 0
+    },
+    "shovel": {
+      "ID": "prod10",
+      "name": "shovel",
+      "price": 8,
+      "rarity": "common",
+      "imgName": "shovel.png",
+      "quantity": 0
+    },
+    "pickaxe": {
+      "ID": "prod11",
+      "name": "pickaxe",
+      "price": 12,
+      "rarity": "common",
+      "imgName": "pickaxe.png",
+      "quantity": 0
+    },
+    "hammer": {
+      "ID": "prod12",
+      "name": "hammer",
+      "price": 6,
+      "rarity": "common",
+      "imgName": "hammer.png",
+      "quantity": 0
+    },
+    "scissors": {
+      "ID": "prod13",
+      "name": "scissors",
+      "price": 4,
+      "rarity": "common",
+      "imgName": "scissors.png",
+      "quantity": 0
+    },
+    "bag": {
+      "ID": "prod14",
+      "name": "bag",
+      "price": 15,
+      "rarity": "common",
+      "imgName": "bag.png",
+      "quantity": 0
+    }
+  },
+  "armor": {
+    "leather_boots": {
+      "ID": "prod15",
+      "name": "leather boots",
+      "price": 20,
+      "rarity": "common",
+      "imgName": "leatherboots.png",
+      "quantity": 0
+    },
+    "iron_helmet": {
+      "ID": "prod16",
+      "name": "iron helmet",
+      "price": 30,
+      "rarity": "rare",
+      "imgName": "ironhelmet.png",
+      "quantity": 0
+    },
+    "iron_chestplate": {
+      "ID": "prod17",
+      "name": "iron chestplate",
+      "price": 40,
+      "rarity": "common",
+      "imgName": "ironarmor.png",
+      "quantity": 0
+    }
+  },
+  "weapons": {
+    "wooden_shield": {
+      "ID": "prod18",
+      "name": "wooden shield",
+      "price": 15,
+      "rarity": "common",
+      "imgName": "woodenshield.png",
+      "quantity": 0
+    },
+    "sword": {
+      "ID": "prod19",
+      "name": "iron sword",
+      "price": 25,
+      "rarity": "legendary",
+      "imgName": "sword.png",
+      "quantity": 0
+    },
+    "bow": {
+      "ID": "prod20",
+      "name": "hunter bow",
+      "price": 20,
+      "rarity": "uncommon",
+      "imgName": "bow.png",
+      "quantity": 0
+    },
+    "arrow": {
+      "ID": "prod21",
+      "name": "flint arrow",
+      "price": 1,
+      "rarity": "common",
+      "imgName": "arrow.png",
+      "quantity": 0
+    }
+  },
+  "magic": {
+    "staff": {
+      "ID": "prod22",
+      "name": "magical staff",
+      "price": 35,
+      "rarity": "common",
+      "imgName": "staff.png",
+      "quantity": 0
+    },
+    "large_full_flask": {
+      "ID": "prod23",
+      "name": "large flask",
+      "price": 50,
+      "rarity": "common",
+      "imgName": "largefullflask.png",
+      "quantity": 0
+    },
+    "spell_book": {
+      "ID": "prod24",
+      "name": "spell book",
+      "price": 45,
+      "rarity": "rare",
+      "imgName": "book.png",
+      "quantity": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="product-card" @slideDown>
+  <img
+    class="product"
+    [src]="'../assets/images/products/' + product!.imgName"
+    alt="arrow"
+  />
+  <img class="shelf" src="../assets/images/header-wood.png" alt="" />
+  <div class="info" (click)="addToInventory(product)">
+    <h1>{{ product!.name }}</h1>
+    <p>{{ product!.price }}C</p>
+  </div>
+</div>

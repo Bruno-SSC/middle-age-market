@@ -1,0 +1,85 @@
+.sidenav {
+  width: 15vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sidenav .store-sign {
+  margin-left: 25px;
+  margin-top: 30px;
+
+  img {
+    image-rendering: pixelated;
+    width: 240px;
+  }
+}
+
+.sidenav .store-departments {
+  margin-left: 25px;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.sidenav .store-departments .department-sign {
+  position: relative;
+  width: 230px;
+  cursor: pointer;
+
+  img {
+    image-rendering: pixelated;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 75%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    image-rendering: pixelated;
+  }
+}
+.sidenav .store-departments {
+  .department-sign--armor {
+    &::before {
+      background-image: url("../../../assets/images/armor.png");
+    }
+  }
+  .department-sign--utils {
+    &::before {
+      background-image: url("../../../assets/images/utils.png");
+    }
+  }
+  .department-sign--magic {
+    &::before {
+      background-image: url("../../../assets/images/magic.png");
+      top: 10px;
+    }
+  }
+  .department-sign--tools {
+    &::before {
+      background-image: url("../../../assets/images/tools.png");
+      top: 5px;
+    }
+  }
+  .department-sign--weapons {
+    &::before {
+      background-image: url("../../../assets/images/weapons.png");
+      top: 10px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<div class="player-info" @slideDown>
+  <div class="items-inventory">
+    <div class="slot" *ngFor="let slot of slots">
+      <img
+        [ngClass]="'slot-img' + slot"
+        src="../../../assets/images/ball.png"
+        alt="inventory slot"
+      />
+
+      <img
+        @showUp
+        *ngIf="trigInvItemAnim(slot)"
+        class="slot-item"
+        [id]="'item' + slot"
+        [src]="'../../../assets/images/products/' + inventory[slot].imgName"
+        alt="inventory item inside slot"
+      />
+
+      <span class="item-quantity">{{
+        inventory[slot] != undefined ? inventory[slot].quantity : ""
+      }}</span>
+    </div>
+  </div>
+<!-- 
+  REMINDER: quando eu percebi que não tinha porque ir tão longe com um projeto eu só fechei isso aqui para não ter que criar a funcionalidade.
+  
+  <div class="gold-pouch">
+    <img
+      class="currency"
+      src="../../../assets/images/money.png"
+      alt="currency number"
+    />
+    <p class="money">3000</p>
+  </div> 
+-->
+</div>

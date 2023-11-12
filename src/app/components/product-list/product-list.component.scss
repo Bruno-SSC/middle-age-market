@@ -1,0 +1,17 @@
+.product-list {
+  padding: 0 30px;
+  padding-top: 100px;
+  width: 60vw;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-list::-webkit-scrollbar {
+  display: none;
+}
