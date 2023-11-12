@@ -3,3 +3,6 @@ commit 0
 
 commit 1 
     Atualizei o link de acesso no readme.
+
+commit 2 
+    adicionei a configuração do netlify pra redicionar requisições pro router do angular.
