@@ -9,3 +9,6 @@ commit 2
 
 commit 3
     fixei um erro de redirecionamento do router e um erro no subscription do navigationEnd em productList.
+
+commit 4
+    tinha mais erros no subscription do navigationEnd e mais mudanças para fazer no routing

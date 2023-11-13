@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: '**',
     component: ProductListComponent,
-    children: [{ path: '**', redirectTo: '/armor' }],
+    children: [{ path: '**', redirectTo: '/' }],
   },
 ];
 

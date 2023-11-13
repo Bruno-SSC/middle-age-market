@@ -12,6 +12,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class ProductListComponent implements OnInit {
   department: string = 'armor';
   products: Product[] = [];
+  departNames = ['armor', 'utils', 'magic', 'tools', 'weapons'];
 
   constructor(
     private productsService: ProductsService,
@@ -19,14 +20,30 @@ export class ProductListComponent implements OnInit {
   ) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
-        e.url = e.url.slice(1, e.url.length); //remove first "/"
-        let cutPoint = e.url.indexOf('/');
-        if (cutPoint != -1) e.url = e.url.slice(0, cutPoint); //remove the second "/", if any
+        e.url = this.cleanUrl(e.url);
+        if (!this.isItAdepartment(e.url)) return;
         if (e.url == '') return;
         this.department = e.url;
         this.refreshProducts();
       }
     });
+  }
+
+  cleanUrl(url: string): string {
+    url = url.slice(1, url.length); //remove first "/"
+    let cutPoint = url.indexOf('/');
+    if (cutPoint != -1) url = url.slice(0, cutPoint); //remove the second "/", if any
+    return url;
+  }
+
+  isItAdepartment(path: string): boolean {
+    let isIt = false;
+    this.departNames.forEach((name) => {
+      if (path === name) {
+        isIt = true;
+      }
+    });
+    return isIt;
   }
 
   ngOnInit(): void {
