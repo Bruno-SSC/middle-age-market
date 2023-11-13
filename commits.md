@@ -6,3 +6,6 @@ commit 1
 
 commit 2 
     adicionei a configuração do netlify pra redicionar requisições pro router do angular.
+
+commit 3
+    fixei um erro de redirecionamento do router e um erro no subscription do navigationEnd em productList.

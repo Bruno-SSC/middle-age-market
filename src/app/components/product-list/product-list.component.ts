@@ -19,7 +19,9 @@ export class ProductListComponent implements OnInit {
   ) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
-        e.url = e.url.slice(1, e.url.length);
+        e.url = e.url.slice(1, e.url.length); //remove first "/"
+        let cutPoint = e.url.indexOf('/');
+        if (cutPoint != -1) e.url = e.url.slice(0, cutPoint); //remove the second "/", if any
         if (e.url == '') return;
         this.department = e.url;
         this.refreshProducts();
